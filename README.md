@@ -15,7 +15,59 @@ The GAN-generated sneaker images are stored in the `results/generated_images/` f
 - Example of generated images:
   ![image](https://github.com/user-attachments/assets/97513e32-52e9-4511-8140-efbeb0aacc98)
 
+Here’s how you can update the **Results** section of your README with your actual performance metrics:
 
+---
+
+## Results
+
+The results of this project demonstrate the model's ability to distinguish between real and AI-generated sneaker images. Below are the detailed performance metrics and evaluation results:
+
+### Performance Metrics
+
+The model achieved the following performance on the test dataset:
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.97      | 0.97   | 0.97     | 266     |
+| 1     | 0.95      | 0.95   | 0.95     | 171     |
+
+- **Accuracy**: 96.34%
+- **Test Loss**: 0.0926
+- **Macro Avg**: 0.96 (Precision), 0.96 (Recall), 0.96 (F1-Score)
+- **Weighted Avg**: 0.96 (Precision), 0.96 (Recall), 0.96 (F1-Score)
+
+### Confusion Matrix
+The confusion matrix provides a detailed breakdown of the model's predictions. It is saved in `results/confusion_matrix.png`.
+
+- **Class 0**: Represents real images.
+- **Class 1**: Represents AI-generated images.
+
+### Interpretation of Results
+- The model performs exceptionally well, with high precision, recall, and F1-scores for both classes.
+- The accuracy of **96.34%** indicates that the model is highly effective at distinguishing between real and AI-generated sneaker images.
+- The low test loss (**0.0926**) further confirms the model's robustness.
+
+---
+## How to Reproduce Results
+
+To reproduce the results:
+
+1. **Train the Model**:
+   - Run the `notebooks/detection_sneakers_ai.ipynb` notebook to train the CNN and GAN models.
+
+2. **Evaluate the Model**:
+   - Evaluate the model on the test dataset and save the performance metrics in `results/performance_metrics.txt`.
+
+3. **Generate Confusion Matrix**:
+   - Generate the confusion matrix and save it in `results/confusion_matrix.png`.
+
+4. **Plot Results**:
+   - Generate training/validation curves and save them in the `results/curves/` folder.
+
+---
+
+By including your actual results in this structured format, you provide a clear and professional overview of your project's performance. This makes it easier for others to understand and replicate your work.
 ### 2. **Performance Metrics**
 The model achieved the following performance on the test dataset:
 
@@ -104,6 +156,7 @@ To reproduce the results:
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
----
+---.
+## Author
 
-By organizing your results in this way, you make it easy for others (or yourself) to understand and reproduce your work. You can also update the README with new results as the project evolves.
+## Alidor Mbaya : mbayandjambealidor@gmail.com
