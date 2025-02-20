@@ -1,0 +1,1 @@
+# Detection-of-AI-Generated-Sneakers-Using-PyTorch-and-GANs
